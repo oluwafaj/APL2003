@@ -10,3 +10,9 @@ pool:
   name: default
 
 steps:
+- task: AzureContainerApps@1
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise Subscription(6a012649-9e7f-4cec-b5d7-d4adee64fbbf)'
+    imageToDeploy: 'acrapl2003faj13mar.azurecr.io/aspnetcorecontainer:latest'
+    containerAppName: 'aca-apl2003'
+    resourceGroup: 'RG1'
